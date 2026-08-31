@@ -2,27 +2,29 @@ export const products = [
   /* ───────────── CPAP ───────────── */
 
   {
-    id: 1,
-    category: "cpap",
-    name: "DreamStation 2 Auto CPAP",
-    price: "₹85,000",
-    emoji: "😮‍💨",
-    tag: "New",
-    specs: [
-      "4–20 cmH₂O",
-      "EZ-Start",
-      "WiFi + BT",
-      "28 dB",
-    ],
-    description:
-      "Advanced auto-adjusting CPAP with integrated humidifier, Bluetooth & cellular connectivity.",
-  },
+  id: 1,
+  category: "cpap",
+  name: "AirSense™ 11 AutoSet™ 4G Tripack",
+  price: "₹85,000",
+  image: "/images/Devices/AirSense™ 11 AutoSet™ (Single Pack)/1.webp",
+  emoji: "😮‍💨",
+  tag: "New",
+  specs: [
+    "4–20 cmH₂O",
+    "EZ-Start",
+    "WiFi + BT",
+    "28 dB",
+  ],
+  description:
+    "Advanced auto-adjusting CPAP with integrated humidifier, Bluetooth & cellular connectivity.",
+},
 
   {
     id: 2,
     category: "cpap",
-    name: "DreamStation Auto CPAP",
+    name: "AirSense™ 10 Elite - Tripack 3G",
     price: "₹72,000",
+    image: "/images/Devices/AirSense™ 10 Elite -Tripack 3G.webp",
     emoji: "💨",
     tag: "Popular",
     specs: [
@@ -37,8 +39,9 @@ export const products = [
   {
     id: 3,
     category: "cpap",
-    name: "DreamStation Go Travel CPAP",
+    name: "Philips Respironics DreamStation Auto CPAP",
     price: "₹58,000",
+    image: "/images/Devices/Philips Respironics DreamStation Auto CPAP/DREAM-STATION.webp",
     emoji: "🌙",
     tag: "",
     specs: [
@@ -55,8 +58,9 @@ export const products = [
   {
     id: 4,
     category: "bipap",
-    name: "DreamStation BiPAP Auto",
+    name: "Lumis™ 100 VPAP ST Non-Invasive Ventilator",
     price: "₹1,10,000",
+    image: "/images/Devices/Lumis™ 100 VPAP ST Non- Invasive Ventilator/1.webp",
     emoji: "🫁",
     tag: "BiPAP",
     specs: [
@@ -71,8 +75,9 @@ export const products = [
   {
     id: 5,
     category: "bipap",
-    name: "DreamStation BiPAP ST",
+    name: "Oxymed AirSmart BPAP ST",
     price: "₹1,45,000",
+    image: "/images/Devices/Oxymed AirSmart BPAP ST/1.jpg",
     emoji: "🫀",
     tag: "Popular",
     specs: [
@@ -87,8 +92,9 @@ export const products = [
   {
     id: 6,
     category: "bipap",
-    name: "Trilogy Evo Universal Ventilator",
+    name: "Resmed Lumis™ 150 VPAP ST",
     price: "₹3,20,000",
+    image: "/images/Devices/Resmed Lumis™ 150 VPAP ST/1.webp",
     emoji: "🌬️",
     tag: "",
     specs: [
@@ -105,8 +111,9 @@ export const products = [
   {
     id: 7,
     category: "oc",
-    name: "Everflo 5L Home OC",
+    name: "Oxymed Portable Oxygen Concentrator",
     price: "₹55,000",
+    image: "/images/Oc/deal1.jpg",
     emoji: "🫧",
     tag: "New",
     specs: [
@@ -121,8 +128,9 @@ export const products = [
   {
     id: 8,
     category: "oc",
-    name: "SimplyGo Portable OC",
+    name: "OxyMed Oxygen Concentrator Machine 5LPM",
     price: "₹1,25,000",
+    image: "/images/Oc/deal2.jpg",
     emoji: "🌿",
     tag: "Popular",
     specs: [
@@ -137,8 +145,9 @@ export const products = [
   {
     id: 9,
     category: "oc",
-    name: "SimplyGo Mini POC",
+    name: "Evox 5 LPM Oxygen Concentrator",
     price: "₹95,000",
+    image: "/images/Oc/evox1.jpg",
     emoji: "⚡",
     tag: "",
     specs: [
@@ -155,8 +164,9 @@ export const products = [
   {
     id: 10,
     category: "mask",
-    name: "DreamWear Full Face Mask",
+    name: "AirFit™ N20",
     price: "₹8,500",
+    image: "/images/Mask/Resmed AirFit™ N20 Nasal Mask/1.webp",
     emoji: "🎭",
     tag: "Popular",
     specs: [
@@ -171,8 +181,9 @@ export const products = [
   {
     id: 11,
     category: "mask",
-    name: "DreamWear Nasal Pillow",
+    name: "AirFit™ N20 Classic",
     price: "₹6,200",
+    image: "/images/Mask/Resmed AirFit™ N20 Classic Mask/1.webp",
     emoji: "😴",
     tag: "",
     specs: [
@@ -187,8 +198,9 @@ export const products = [
   {
     id: 12,
     category: "mask",
-    name: "DreamWear Under-Nose Nasal",
+    name: "Philips Dream Wisp Nasal Mask",
     price: "₹7,800",
+    image: "/images/Mask/Philips mask/Philips Dream Wisp Nasal Mask1.webp",
     emoji: "🌟",
     tag: "New",
     specs: [
@@ -205,7 +217,7 @@ export const products = [
   {
     id: 13,
     category: "accessory",
-    name: "DreamStation Heated Humidifier",
+    name: "ClimateLineAir™ heated tube",
     price: "₹12,500",
     emoji: "💧",
     tag: "",
@@ -221,7 +233,7 @@ export const products = [
   {
     id: 14,
     category: "accessory",
-    name: "Heated Tubing 15mm",
+    name: "SLIMLINE TUBING™",
     price: "₹3,200",
     emoji: "🔌",
     tag: "",
@@ -237,7 +249,7 @@ export const products = [
   {
     id: 15,
     category: "accessory",
-    name: "CPAP Cleaning System",
+    name: "Grey Tubing - Cuffed, STD tubing",
     price: "₹18,000",
     emoji: "🧼",
     tag: "",

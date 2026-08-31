@@ -1,36 +1,97 @@
+import Image from "next/image";
+
 type Props = {
   product: {
     name: string;
     emoji: string;
     price: string;
     description: string;
+    image?: string;
   };
 };
 
 export default function ProductCard({ product }: Props) {
   return (
-    <div className="prod-card">
-      <div className="prod-img">
-        {product.emoji}
-      </div>
-
-      <div className="prod-body">
-        <div className="prod-name">
-          {product.name}
-        </div>
-
-        <div className="prod-desc">
-          {product.description}
-        </div>
-
-        <div className="prod-footer">
-          <div className="prod-price">
-            {product.price}
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "410px",
+        background: "#182138",
+        border: "1px solid rgba(255,255,255,0.10)",
+        borderRadius: "24px",
+        padding: "40px 35px 20px",
+        overflow: "hidden",
+        boxSizing: "border-box",
+      }}
+    >
+      {/* IMAGE AREA */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "100%",
+          overflow: "hidden",
+          borderRadius: "0",
+        }}
+      >
+        {product.image ? (
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        ) : (
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "#26324a",
+              fontSize: "80px",
+            }}
+          >
+            {product.emoji}
           </div>
+        )}
 
-          <button className="add-btn">
-            +
-          </button>
+        {/* DARK GRADIENT */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(to bottom, rgba(10,20,40,0) 45%, rgba(10,20,40,0.25) 60%, rgba(10,20,40,0.95) 100%)",
+          }}
+        />
+
+        {/* PRODUCT NAME */}
+        <div
+          style={{
+            position: "absolute",
+            left: "0",
+            right: "0",
+            bottom: "10px",
+            padding: "0 5px",
+          }}
+        >
+          <div
+            style={{
+              color: "#fff",
+              fontSize: "30px",
+              fontWeight: 800,
+              lineHeight: 1.05,
+              textShadow: "0 2px 8px rgba(0,0,0,0.4)",
+            }}
+          >
+            {product.name}
+          </div>
         </div>
       </div>
     </div>

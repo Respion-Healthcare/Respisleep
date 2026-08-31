@@ -1,5 +1,4 @@
-
-"use client"; 
+"use client";
 
 export default function Categories() {
   return (
@@ -17,142 +16,255 @@ export default function Categories() {
       <div className="cat-grid">
 
         {/* CPAP */}
-        <a
-          className="cat-card"
-          href="#"
-          onClick={(e) => e.preventDefault()}
-        >
-          <div className="cat-icon">😮‍💨</div>
+        <div className="cat-card-wrapper">
+          <div className="cat-card-flip">
 
-          <div className="cat-name">
-            CPAP Devices
-          </div>
+            {/* FRONT */}
+            <div className="cat-card cat-card-front">
+              <img
+                src="/images/categories/cpap.webp"
+                alt="CPAP Devices"
+                className="cat-image"
+              />
 
-          <div className="cat-desc">
-            Continuous Positive Airway Pressure
-            therapy for obstructive sleep apnea
-            treatment.
-          </div>
+              <div className="cat-overlay">
+                <div className="cat-name">
+                  CPAP Devices
+                </div>
+              </div>
+            </div>
 
-          <div className="cat-count">
-            12 Products
+            {/* BACK */}
+            <div className="cat-card cat-card-back">
+              <div className="cat-icon">😮‍💨</div>
+
+              <div className="cat-name">
+                CPAP Devices
+              </div>
+
+              <div className="cat-desc">
+                Continuous Positive Airway Pressure
+                therapy for obstructive sleep apnea
+                treatment.
+              </div>
+
+              <div className="cat-count">
+                12 Products
+              </div>
+            </div>
+
           </div>
-        </a>
+        </div>
+
 
         {/* BIPAP */}
-        <a
-          className="cat-card"
-          href="#"
-          onClick={(e) => e.preventDefault()}
-        >
-          <div className="cat-icon">🫁</div>
+        <div className="cat-card-wrapper">
+          <div className="cat-card-flip">
 
-          <div className="cat-name">
-            BiPAP / BPAP
+            {/* FRONT */}
+            <div className="cat-card cat-card-front">
+              <img
+                src="/images/categories/bipap.webp"
+                alt="BiPAP / BPAP"
+                className="cat-image"
+              />
+
+              <div className="cat-overlay">
+                <div className="cat-name">
+                  BiPAP / BPAP
+                </div>
+              </div>
+            </div>
+
+            {/* BACK */}
+            <div className="cat-card cat-card-back">
+              <div className="cat-icon">🫁</div>
+
+              <div className="cat-name">
+                BiPAP / BPAP
+              </div>
+
+              <div className="cat-desc">
+                Bilevel Positive Airway Pressure
+                for complex sleep disordered breathing
+                and ventilation support.
+              </div>
+
+              <div className="cat-count">
+                8 Products
+              </div>
+            </div>
+
           </div>
+        </div>
 
-          <div className="cat-desc">
-            Bilevel Positive Airway Pressure
-            for complex sleep disordered breathing
-            and ventilation support.
+
+        {/* OXYGEN */}
+        <div className="cat-card-wrapper">
+          <div className="cat-card-flip">
+
+            {/* FRONT */}
+            <div className="cat-card cat-card-front">
+              <img
+                src="/images/categories/oxygen.jpg"
+                alt="Oxygen Concentrators"
+                className="cat-image"
+              />
+
+              <div className="cat-overlay">
+                <div className="cat-name">
+                  Oxygen Concentrators
+                </div>
+              </div>
+            </div>
+
+            {/* BACK */}
+            <div className="cat-card cat-card-back">
+              <div className="cat-icon">🫧</div>
+
+              <div className="cat-name">
+                Oxygen Concentrators
+              </div>
+
+              <div className="cat-desc">
+                Portable and home-based OC units
+                delivering continuous pulse-dose
+                oxygen therapy.
+              </div>
+
+              <div className="cat-count">
+                10 Products
+              </div>
+            </div>
+
           </div>
+        </div>
 
-          <div className="cat-count">
-            8 Products
+
+        {/* MASKS */}
+        <div className="cat-card-wrapper">
+          <div className="cat-card-flip">
+
+            {/* FRONT */}
+            <div className="cat-card cat-card-front">
+              <img
+                src="/images/categories/mask.webp"
+                alt="Masks & Interfaces"
+                className="cat-image"
+              />
+
+              <div className="cat-overlay">
+                <div className="cat-name">
+                  Masks & Interfaces
+                </div>
+              </div>
+            </div>
+
+            {/* BACK */}
+            <div className="cat-card cat-card-back">
+              <div className="cat-icon">🎭</div>
+
+              <div className="cat-name">
+                Masks & Interfaces
+              </div>
+
+              <div className="cat-desc">
+                Full-face, nasal, and nasal pillow
+                mask systems for superior comfort
+                and seal.
+              </div>
+
+              <div className="cat-count">
+                25 Products
+              </div>
+            </div>
+
           </div>
-        </a>
+        </div>
 
-        {/* Oxygen */}
-        <a
-          className="cat-card"
-          href="#"
-          onClick={(e) => e.preventDefault()}
-        >
-          <div className="cat-icon">🫧</div>
 
-          <div className="cat-name">
-            Oxygen Concentrators
+        {/* ACCESSORIES */}
+        <div className="cat-card-wrapper">
+          <div className="cat-card-flip">
+
+            {/* FRONT */}
+            <div className="cat-card cat-card-front">
+              <img
+                src="/images/categories/accessories.jpg"
+                alt="Accessories"
+                className="cat-image"
+              />
+
+              <div className="cat-overlay">
+                <div className="cat-name">
+                  Accessories
+                </div>
+              </div>
+            </div>
+
+            {/* BACK */}
+            <div className="cat-card cat-card-back">
+              <div className="cat-icon">🔧</div>
+
+              <div className="cat-name">
+                Accessories
+              </div>
+
+              <div className="cat-desc">
+                Tubing, humidifiers, filters,
+                carrying cases, and replacement
+                parts for Philips devices.
+              </div>
+
+              <div className="cat-count">
+                40+ Products
+              </div>
+            </div>
+
           </div>
+        </div>
 
-          <div className="cat-desc">
-            Portable and home-based OC units
-            delivering continuous pulse-dose
-            oxygen therapy.
+
+        {/* STARTER KITS */}
+        <div className="cat-card-wrapper">
+          <div className="cat-card-flip">
+
+            {/* FRONT */}
+            <div className="cat-card cat-card-front">
+              <img
+                src="/images/categories/bed.jpg"
+                alt="Starter Kits"
+                className="cat-image"
+              />
+
+              <div className="cat-overlay">
+                <div className="cat-name">
+                  Starter Kits
+                </div>
+              </div>
+            </div>
+
+            {/* BACK */}
+            <div className="cat-card cat-card-back">
+              <div className="cat-icon">📦</div>
+
+              <div className="cat-name">
+                Starter Kits
+              </div>
+
+              <div className="cat-desc">
+                Everything you need to start therapy —
+                device, mask, humidifier and
+                accessories bundled together.
+              </div>
+
+              <div className="cat-count">
+                6 Bundles
+              </div>
+            </div>
+
           </div>
-
-          <div className="cat-count">
-            10 Products
-          </div>
-        </a>
-
-        {/* Masks */}
-        <a
-          className="cat-card"
-          href="#"
-          onClick={(e) => e.preventDefault()}
-        >
-          <div className="cat-icon">🎭</div>
-
-          <div className="cat-name">
-            Masks & Interfaces
-          </div>
-
-          <div className="cat-desc">
-            Full-face, nasal, and nasal pillow
-            mask systems for superior comfort
-            and seal.
-          </div>
-
-          <div className="cat-count">
-            25 Products
-          </div>
-        </a>
-
-        {/* Accessories */}
-        <a
-          className="cat-card"
-          href="#"
-          onClick={(e) => e.preventDefault()}
-        >
-          <div className="cat-icon">🔧</div>
-
-          <div className="cat-name">
-            Accessories
-          </div>
-
-          <div className="cat-desc">
-            Tubing, humidifiers, filters,
-            carrying cases, and replacement
-            parts for Philips devices.
-          </div>
-
-          <div className="cat-count">
-            40+ Products
-          </div>
-        </a>
-
-        {/* Starter Kits */}
-        <a
-          className="cat-card"
-          href="#"
-          onClick={(e) => e.preventDefault()}
-        >
-          <div className="cat-icon">📦</div>
-
-          <div className="cat-name">
-            Starter Kits
-          </div>
-
-          <div className="cat-desc">
-            Everything you need to start therapy —
-            device, mask, humidifier and
-            accessories bundled together.
-          </div>
-
-          <div className="cat-count">
-            6 Bundles
-          </div>
-        </a>
+        </div>
 
       </div>
     </section>
