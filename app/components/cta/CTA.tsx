@@ -14,18 +14,23 @@ export default function CTA() {
 
       <div className="cta-actions">
 
-        <a className="btn-white" href="#">
-          📞 Call Us Now
-        </a>
+  <a
+    className="btn-white"
+    href="tel:+919937000606"
+  >
+    📞 Call Us Now
+  </a>
 
-        <a
-          className="btn-outline-white"
-          href="#"
-        >
-          💬 WhatsApp
-        </a>
+  <a
+    className="btn-outline-white"
+    href="https://wa.me/919937000606"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    💬 WhatsApp
+  </a>
 
-      </div>
+</div>
     </div>
   );
 }
